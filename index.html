@@ -1,220 +1,250 @@
-<!DOCTYPE html> <html lang="id"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>CV - Briliant Nafis Rifky Putra</title>
-<style>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Ricky Adha Pratama</title>
+
+  <style>
     * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     body {
-        background: linear-gradient(135deg, #0f172a, #1e3a8a);
-        color: #333;
-        min-height: 100vh;
-        padding: 40px 20px;
+      background: #080808;
+      color: #f5f5f5;
+      line-height: 1.6;
     }
 
     .container {
-        max-width: 900px;
-        margin: auto;
-        background: white;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
     }
 
-    .header {
-        background: linear-gradient(135deg, #2563eb, #06b6d4);
-        color: white;
-        text-align: center;
-        padding: 50px 20px;
+    .cv-card {
+      background: #151515;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 50px rgba(255, 0, 0, 0.25);
+      border: 1px solid #2b2b2b;
     }
 
-    .profile-photo {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        background: white;
-        margin: 0 auto 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #2563eb;
-        font-size: 45px;
-        font-weight: bold;
-        border: 5px solid rgba(255, 255, 255, 0.7);
+    header {
+      background:
+        linear-gradient(135deg, #080808, #8b0000, #ff0000);
+      padding: 60px 40px;
+      text-align: center;
     }
 
-    .header h1 {
-        font-size: 32px;
-        margin-bottom: 10px;
+    header h1 {
+      font-size: 45px;
+      color: white;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
-    .header p {
-        font-size: 16px;
-        opacity: 0.9;
+    header p {
+      font-size: 18px;
+      color: #ffdede;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 9px 22px;
+      background: #ff0000;
+      border-radius: 30px;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0 5px 20px rgba(255, 0, 0, 0.4);
     }
 
     .content {
-        padding: 40px;
+      padding: 40px;
     }
 
-    .section {
-        margin-bottom: 35px;
+    section {
+      margin-bottom: 35px;
     }
 
-    .section h2 {
-        color: #2563eb;
-        border-bottom: 2px solid #e5e7eb;
-        padding-bottom: 10px;
-        margin-bottom: 18px;
-    }
-
-    .section p {
-        line-height: 1.8;
-        color: #555;
+    section h2 {
+      color: #ff3333;
+      font-size: 24px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #3a1717;
+      padding-bottom: 8px;
     }
 
     .data {
-        display: grid;
-        grid-template-columns: 150px 1fr;
-        gap: 12px;
-        line-height: 1.6;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 12px;
     }
 
-    .data strong {
-        color: #1e293b;
-    }
-
-    .skills {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-    }
-
-    .skill {
-        background: #eff6ff;
-        color: #2563eb;
-        padding: 10px 18px;
-        border-radius: 25px;
-        font-weight: bold;
-        border: 1px solid #bfdbfe;
-        transition: 0.3s;
-    }
-
-    .skill:hover {
-        background: #2563eb;
-        color: white;
-        transform: translateY(-3px);
+    .label {
+      font-weight: bold;
+      color: #ff5555;
     }
 
     .education {
-        background: #f8fafc;
-        padding: 20px;
-        border-left: 5px solid #2563eb;
-        border-radius: 8px;
+      background: #0d0d0d;
+      padding: 20px;
+      border-radius: 12px;
+      border-left: 4px solid #ff0000;
     }
 
     .education h3 {
-        color: #1e293b;
-        margin-bottom: 8px;
+      color: white;
+      margin-bottom: 5px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .skill {
+      background: #0d0d0d;
+      padding: 25px 20px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid #351515;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      transform: translateY(-7px);
+      border-color: #ff0000;
+      box-shadow: 0 10px 25px rgba(255, 0, 0, 0.25);
+    }
+
+    .skill span {
+      font-size: 40px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .skill strong {
+      color: #ff3333;
+      font-size: 18px;
     }
 
     footer {
-        text-align: center;
-        background: #f1f5f9;
-        padding: 20px;
-        color: #64748b;
-        font-size: 14px;
+      text-align: center;
+      padding: 20px;
+      background: #080808;
+      color: #777;
+      font-size: 14px;
     }
 
     @media (max-width: 600px) {
-        body {
-            padding: 20px 10px;
-        }
+      header {
+        padding: 45px 20px;
+      }
 
-        .content {
-            padding: 25px 20px;
-        }
+      header h1 {
+        font-size: 30px;
+      }
 
-        .header h1 {
-            font-size: 25px;
-        }
+      .content {
+        padding: 25px 20px;
+      }
 
-        .data {
-            grid-template-columns: 1fr;
-            gap: 3px;
-            margin-bottom: 10px;
-        }
+      .data {
+        grid-template-columns: 1fr;
+        gap: 2px;
+        margin-bottom: 15px;
+      }
+
+      .skills {
+        grid-template-columns: 1fr;
+      }
     }
-</style>
+  </style>
+</head>
 
-</head> <body>
-<div class="container">
+<body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="profile-photo">BN</div>
+  <div class="container">
+    <div class="cv-card">
 
-        <h1>Briliant Nafis Rifky Putra</h1>
-        <p>Pelajar | TJKT | Teknologi & Jaringan</p>
-    </header>
+      <header>
+        <h1>Ricky Adha Pratama</h1>
+        <p>Mobile Legends: Bang Bang Professional Player</p>
+        <div class="badge">ONIC Esports</div>
+      </header>
 
-    <main class="content">
+      <div class="content">
 
-        <!-- Data Diri -->
-        <section class="section">
-            <h2>Data Diri</h2>
+        <section>
+          <h2>👤 Data Diri</h2>
 
-            <div class="data">
-                <strong>Nama</strong>
-                <span>Briliant Nafis Rifky Putra</span>
+          <div class="data">
+            <div class="label">Nama</div>
+            <div>Ricky Adha Pratama</div>
 
-                <strong>Alamat</strong>
-                <span>Kediri</span>
+            <div class="label">Alamat</div>
+            <div>Centong</div>
+
+            <div class="label">Tim</div>
+            <div>ONIC Esports</div>
+          </div>
+        </section>
+
+        <section>
+          <h2>🎮 Profil</h2>
+
+          <p>
+            Saya adalah seorang proplayer Mobile Legends: Bang Bang
+            yang bermain secara profesional bersama tim ONIC Esports.
+            Saya memiliki kemampuan dalam bermain sebagai pemain EXP Lane
+            serta menguasai teknik jumpshot.
+          </p>
+        </section>
+
+        <section>
+          <h2>🎓 Pendidikan</h2>
+
+          <div class="education">
+            <h3>SMK Cahaya Surya</h3>
+            <p>Jurusan TJKT</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>⚡ Keahlian</h2>
+
+          <div class="skills">
+
+            <div class="skill">
+              <span>⚔️</span>
+              <strong>EXP Lane Terkuat</strong>
+              <p>Spesialis bermain di posisi EXP Lane.</p>
             </div>
-        </section>
 
-        <!-- Profil -->
-        <section class="section">
-            <h2>Profil</h2>
-
-            <p>
-                Saya adalah seorang pelajar yang tertarik pada teknologi,
-                jaringan, dan pengembangan aplikasi. Saya memiliki semangat
-                untuk mempelajari hal-hal baru serta mampu bekerja secara
-                mandiri maupun dalam tim.
-            </p>
-        </section>
-
-        <!-- Pendidikan -->
-        <section class="section">
-            <h2>Pendidikan</h2>
-
-            <div class="education">
-                <h3>SMK Cahaya Surya</h3>
-                <p>Jurusan Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</p>
+            <div class="skill">
+              <span>🎯</span>
+              <strong>Bapak Jumpshot Indonesia</strong>
+              <p>Menguasai teknik jumpshot dalam permainan.</p>
             </div>
+
+          </div>
         </section>
 
-        <!-- Keahlian -->
-        <section class="section">
-            <h2>Keahlian</h2>
+      </div>
 
-            <div class="skills">
-                <span class="skill">Mikrotik</span>
-                <span class="skill">Git & GitHub</span>
-                <span class="skill">Microsoft Office</span>
-                <span class="skill">Problem Solving</span>
-            </div>
-        </section>
+      <footer>
+        © 2026 Ricky Adha Pratama — Curriculum Vitae
+      </footer>
 
-    </main>
+    </div>
+  </div>
 
-    <footer>
-        © 2026 Briliant Nafis Rifky Putra
-    </footer>
-
-</div>
-
-</body> </html>
+</body>
+</html>
